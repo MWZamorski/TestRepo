@@ -6,6 +6,24 @@
     <Name>MultidimensionalProject1.database</Name>
     <FullPath>MultidimensionalProject1.database</FullPath>
   </Database>
+  <Dimensions>
+    <ProjectItem>
+      <Name>DimMachine.dim</Name>
+      <FullPath>DimMachine.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimDate.dim</Name>
+      <FullPath>DimDate.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimOutage.dim</Name>
+      <FullPath>DimOutage.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DimStore.dim</Name>
+      <FullPath>DimStore.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
   <DataSources>
     <ProjectItem>
       <Name>Contoso Retail DW.ds</Name>
@@ -18,6 +36,12 @@
       <FullPath>Contoso Retail DW.dsv</FullPath>
     </ProjectItem>
   </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role.role</Name>
+      <FullPath>Role.role</FullPath>
+    </ProjectItem>
+  </Roles>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
