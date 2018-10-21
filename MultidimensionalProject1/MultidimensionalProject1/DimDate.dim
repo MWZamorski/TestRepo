@@ -152,6 +152,15 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="1d6a0c9c-dada-4872-9b44-78ead90a61ce">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bd3719c1-ae4f-454b-b432-f2866018adef">
+          <TableID>olap_vDimDate</TableID>
+          <ColumnID>CalendarYearLabel</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -167,12 +176,21 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="124f70af-4e41-4b24-a198-d96e19803a0b">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49601294-5823-4cc9-9c9a-9715db54c008">
+          <TableID>olap_vDimDate</TableID>
+          <ColumnID>CalendarHalfYearLabel</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="b1c34f7d-b32a-4a58-a021-982c7d4f8f9f">
           <AttributeID>Calendar Year</AttributeID>
           <Name>Calendar Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -188,12 +206,21 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="3efad55e-7109-4fac-ab8f-0e9296d02ea5">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d828239a-6191-4ea8-b285-281080a6a3f9">
+          <TableID>olap_vDimDate</TableID>
+          <ColumnID>CalendarQuarterLabel</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="f0c79fbd-8d52-4b00-bf5e-6d5916dadc55">
           <AttributeID>Calendar Half Year</AttributeID>
           <Name>Calendar Half Year</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -209,12 +236,22 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="14e9b4b4-33ef-475b-813b-87365e905098">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="14ff86e7-c1ab-4257-89a5-8e8b2f72997e">
+          <TableID>olap_vDimDate</TableID>
+          <ColumnID>CalendarMonthLabel</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="6a19e99c-75e1-440b-a5b1-754a75447b93">
           <AttributeID>Calendar Quarter</AttributeID>
           <Name>Calendar Quarter</Name>
         </AttributeRelationship>
       </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
@@ -223,26 +260,56 @@
     <Hierarchy dwd:design-time-name="fe82aa3b-de77-44b8-b1af-9b7d5d9a1533">
       <ID>Hierarchy</ID>
       <Name>YHQM</Name>
+      <Translations>
+        <Translation dwd:design-time-name="61df83f4-bda5-46fb-9db3-f76af0c331bd">
+          <Language>1045</Language>
+          <Caption>Hierarchia</Caption>
+        </Translation>
+      </Translations>
       <Levels>
         <Level dwd:design-time-name="14077bdd-74b9-457e-af8e-44f4e1b92077">
           <ID>Calendar Year</ID>
           <Name>Calendar Year</Name>
           <SourceAttributeID>Calendar Year</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="c7a3d84e-59aa-4978-9f69-0914cb75363a">
+              <Language>1045</Language>
+              <Caption>Rok</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="9a0277a7-383f-4540-bd60-5e5a8a415c08">
           <ID>Calendar Half Year</ID>
           <Name>Calendar Half Year</Name>
           <SourceAttributeID>Calendar Half Year</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="818ff98b-9e19-4412-ad6a-5d508328d4ae">
+              <Language>1045</Language>
+              <Caption>Półrocze</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="f7a5d914-73b8-4d5f-8299-621ce4f96e32">
           <ID>Calendar Quarter</ID>
           <Name>Calendar Quarter</Name>
           <SourceAttributeID>Calendar Quarter</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="56323579-be1c-4714-a7ce-6c5253032032">
+              <Language>1045</Language>
+              <Caption>Kwartał</Caption>
+            </Translation>
+          </Translations>
         </Level>
         <Level dwd:design-time-name="99ce49e8-525d-41f7-8f1b-d4f57cd6c621">
           <ID>Calendar Month</ID>
           <Name>Calendar Month</Name>
           <SourceAttributeID>Calendar Month</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="69c97502-a2ba-4c3b-834e-77b090317c80">
+              <Language>1045</Language>
+              <Caption>Miesiąc</Caption>
+            </Translation>
+          </Translations>
         </Level>
       </Levels>
     </Hierarchy>
